@@ -22,7 +22,7 @@ figure, p {
 }
 
 a {
-    color: rgb(0, 76, 24);
+  color: #fff;
 	
     -webkit-transition: all .3s ease-in 0s;
        -moz-transition: all .3s ease-in 0s;
@@ -158,26 +158,12 @@ body > section,
 
 .navbar-brand {
   padding: 0;
-  margin:0
 }
 
-.navbar-brand h1{
-  font-size: 28px;
-  padding-top: 15px;
-  margin-top: -22px;
-  color: #fff;
-}
-
-.navbar-brand a{
-  color: #0feb9e;
-}
-.navbar-brand img {
-  width: 11%;
-  height: 11%;
-  margin-left: 20px;
-  margin-top: 10px;
-  
-  box-shadow: 5px 0 30px rgb(34, 34, 34, 0.2)
+.navbar-brand h1 {
+  font-size: 24px;
+  padding-left:5px;
+  margin-top:10px
 }
 
 .navbar-nav li a {
@@ -602,43 +588,18 @@ label.error {
 
 
 .footer {
+  padding: 10px 0 !important;
   background-color: #1ea78d;
   border-top: 5px solid #062033;
   color: #fff;
 }
 
+.footer a {
+  color: #0feb9e;
+}
+
 .footer a:hover {
   color: #062033;
-}
-
-.footer h6 {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-
-.footer-single {
-  line-height: 24px;
-}
-
-.footer-single ul {
-  }
-
-.footer-single li {
-  line-height: 32px;
-}
-
-.footer-single p i {
-  margin: 0 10px;
-}
-
-.credit a {
-  color: #062033;
-}
-
-.credit a:hover {
-  color: #fff;
 }
 
 .copyright {
