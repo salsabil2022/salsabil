@@ -1,9 +1,10 @@
 add_header Strict-Transport-Security 'max-age=31536000; includeSubDomains; preload;' always;
 
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule .* https://salsabiltrading.com/%{REQUEST_URI} [R=301,L]
-
+<IfModule mod_rewrite.c>
+	RewriteCond %{HTTPS} off [OR]
+	RewriteCond %{HTTP_HOST} ^www\.salsabiltrading\.com [NC]
+	RewriteRule (.*) https://salsabiltrading.com/$1 [L,R=301]
+</IfModule>]
 
 # BEGIN GZIP
 <ifmodule mod_deflate.c>
